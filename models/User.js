@@ -23,6 +23,8 @@ User.init(
     username: {
       type: DataTypes.STRING,
       allowNull: false,
+      // there cannot be any duplicate username values in this table
+      unique: true,
     },
     // define a password column
     password: {

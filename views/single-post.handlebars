@@ -1,0 +1,44 @@
+<article class="">
+  <div class="">
+    <div>
+      <a href="/post/{{id}}" target="_blank">{{post.title}}</a>
+    </div>
+    <div class="meta">
+      Posted by {{post.user.username}} on {{post.created_at}}
+    </div>
+  </div>
+  <div class="">
+    <p>{{post.content}}</p>
+  </div>
+</article>
+
+<form class="comment-form">
+  <div>
+    <h2 class=""></h2>
+  </div>
+
+  <div>
+    <p>Comment</p>
+  </div>
+
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+<div class="comments">
+  {{#each post.comments}}
+  <section class="comment">
+    <div class="text">
+      {{comment_text}}
+    </div>
+    <div class="meta">
+      -{{user.username}}, {{created_at}}
+    </div>
+  </section>
+  {{/each}}
+</div>

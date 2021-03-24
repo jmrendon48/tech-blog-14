@@ -21,12 +21,15 @@
           <li>
             <a href="">Dashboard</a>
           </li>
-          <li>
-            <a href="/login">Login</a>
-          </li>
+          {{#if loggedIn}}
           <li>
             <button id="logout" class="btn-no-style">Logout</button>
           </li>
+          {{else}}
+          <li>
+            <a href="/login">Login</a>
+          </li>
+          {{/if}}
         </ul>
       </nav>
       <h1>
@@ -37,7 +40,9 @@
       {{{ body }}}
     </main>
   </div>
+  {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

@@ -3,7 +3,19 @@
   <ol class="">
   {{#each posts as |post|}}
   	<li>
-    	{{> post-info post }}
+    	<article class="">
+        <div class="">
+          <div>
+            <a href="dashboard/edit/{{id}}">{{post.title}}</a>
+          </div>
+          <div class="meta">
+            Posted by {{post.user.username}} on {{format_date created_at}}
+          </div>
+        </div>
+        <div class="">
+          <p>{{post.content}}</p>
+        </div>
+      </article>
   	</li>
   {{/each}}
 	</ol>

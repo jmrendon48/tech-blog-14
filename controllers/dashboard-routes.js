@@ -33,12 +33,7 @@ router.get("/", withAuth, (req, res) => {
 
 router.get("/edit/:id", withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
-    attributes: [
-      "id",
-      "title",
-      "content",
-      "created_at",
-    ],
+    attributes: ["id", "title", "content",],
   })
     .then((dbPostData) => {
       if (dbPostData) {

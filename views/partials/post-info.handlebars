@@ -1,7 +1,11 @@
 <article class="">
     <div class="">
     <div>
+        {{#if homepage}}
         <a href="/post/{{id}}">{{title}}</a>
+        {{/else}}
+        <a href="/edit/{{id}}">{{title}}</a>
+        {{/if}}
     </div>
     <div class="meta">
         Posted by {{user.username}} on {{format_date created_at}}

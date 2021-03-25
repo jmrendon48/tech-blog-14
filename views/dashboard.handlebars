@@ -1,0 +1,11 @@
+{{#if posts.length}}
+<section>
+  <ol class="">
+  {{#each posts as |post|}}
+  	<li>
+    	{{> post-info post }}
+  	</li>
+  {{/each}}
+	</ol>
+</section>
+{{/if}}

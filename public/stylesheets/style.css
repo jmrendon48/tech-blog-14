@@ -16,3 +16,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+header {
+    height: 110px;
+}
+
+.page-title {
+    margin: 10px 30px;
+}
+
+.page-title a {
+    font-weight: bold;
+}

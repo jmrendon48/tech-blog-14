@@ -51,3 +51,14 @@ header {
     font-size: 18px;
     margin-bottom: 0;
 }
+
+.login-container {
+    width: 900px;
+    margin: 30px 0;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.login-title {
+    padding: 5px 10px;
+}

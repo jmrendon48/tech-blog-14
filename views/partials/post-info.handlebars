@@ -1,13 +1,13 @@
-<article class="">
-  <div class="">
+<article class="post mx-auto border-dark">
+  <div class="d-flex align-items-center justify-content-between bg-dark p-1">
     <div>
-        <a href="/post/{{id}}">{{title}}</a>
+        <a class="post-title text-decoration-none text-white" href="/post/{{id}}">{{title}}</a>
     </div>
-    <div class="meta">
+    <div class="meta text-white post-meta">
       Posted by {{user.username}} on {{format_date created_at}}
     </div>
   </div>
   <div class="">
-      <p>{{content}}</p>
+      <p class="text-dark post-content">{{content}}</p>
   </div>
 </article>

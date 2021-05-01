@@ -28,3 +28,26 @@ header {
 .page-title a {
     font-weight: bold;
 }
+
+.post {
+    width: 900px;
+    margin: 30px 0;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.post-title {
+    font-size: 24px;
+    margin: 0 11px;
+}
+
+.post-meta {
+    font-size: 16px;
+    margin: 0 11px;
+}
+
+.post-content {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 0;
+}

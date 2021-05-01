@@ -1,24 +1,17 @@
-<form class="create-post-form">
+<form class="create-post-container mx-auto border-dark">
   <div>
-    <h2 class="">Create New Post</h2>
+    <h2 class="bg-dark text-white create-post-title">Create New Post</h2>
   </div>
-
-  <div>
+  <div class="p-2">
     <p>Title</p>
+    <input class="form-control" type="text" id="post-title" name="post-title" />
   </div>
-  <div>
-    <input type="text" id="post-title" name="post-title" />
-  </div>
-
-  <div>
+  <div class="p-2">
     <p>Content</p>
+    <input class="form-control post-content-input" id="post-content" name="post-content" />
   </div>
-  <div>
-    <input id="post-content" name="post-content" />
-  </div>
-
-  <div>
-    <button type="submit">Create</button>
+  <div class="p-2">
+    <button class="form-control btn btn-dark text-white" type="submit">Create</button>
   </div>
 </form>
 

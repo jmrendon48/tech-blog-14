@@ -87,3 +87,16 @@ header {
 .post-content-input {
     height: 100px;
 }
+
+.dashboard-title {
+    font-weight: bold;
+}
+
+.dashboard-post {
+    width: 900px;
+    padding: 10px;
+}
+
+.dashboard-post-text {
+    font-size: 18px;
+}
